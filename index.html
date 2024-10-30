@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Laila:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Asul:wght@400;700&family=Laila:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Paytone+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Paytone+One&display=swap"
+        rel="stylesheet">
+    <style>
+        #slider {
+            height: 880px;
+            width: 100%;
+            background-size: cover;
+            margin: auto;
+        }
+    </style>
+    <script>
+        var img = ["01.JPG", "02.jpg", "03.jpg"];
+        var i = 0;
+        function slide() {
+            //alert("hii");
+            var div = document.getElementById("slider");
+            //alert(div)
+            div.style.backgroundImage = "url('images/" + img[i] + "')";
+            i++;
+            if (img.length == i) {
+                i = 0;
+            }
+            window.setTimeout("slide()", 3000);
+        }
+
+    </script>
+
+
+</head>
+
+<body onload="slide()">
+    <div class="container-fluid">
+        <!--navbar start-->
+        <div class="row">
+            <div class="col-sm-12 p-0 mx-auto py-2" style="background-color: #FFFBDF;">
+
+
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo1.svg" alt="Vadilal" height="55" style="margin-left: 25px;">
+                </a>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--navbar end-->
+    <!--slider start-->
+
+
+    <div class="row">
+
+        <div class="col-sm-12 mx-auto p-0">
+
+            <div id="slider">
+                <img src="images/header.png" alt="">
+                <h2 class="txt" style="font-family: Asul serif;"><b>Moments of Delight <br>
+                        for Everyone
+                    </b></h2>
+                <h3 class="txt2">Tasteful experiences that make you go Waah!
+                </h3>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--slider end-->
+    <!--main start-->
+    <div class="row mb-5" style="background-color:#FFF5B0" ;>
+        <div class="col-sm-10 mx-auto p-5 text-light rounded-5" style="margin-top: -70px; background-color: #F00540; height: 210px;" >
+            <h3 class=" mx-3" style="margin-top: 10px;"><b>Plunge into our Ice <br/>Cream ocean</b></h3>
+            <h3 class="nineteen" style=" font-family: Archivo Black, sans-serif;">19 </h3>
+            <h3 style="margin-left: 470px;"> Diverse Categories</h3>
+
+            <h3 class="twenty" style=" font-family: Archivo Black, sans-serif;">120+ </h3>
+            <h3 style="margin-left: 820px;">
+                Ice Creams</h3>
+
+
+
+
+        </div>
+        <h2 style="font-family: Asap Condensed, sans-serif;
+            
+        text-align: center; font-size: 68px; margin-top: 50px; color: #6B3D2B;"><b>Ice Creams that are
+                <br>lip-smackingly delicious!</b>
+        </h2>
+
+        <div class="row text-center">
+            <div class="col-sm-3 mt-4 mb-5 mx-auto ">
+
+                <img src="images/loop1.gif" style="height: 60px; text-align: center; float: left 30px;">No Compromise on Quality!
+
+            </div>
+            <div class="col-sm-3 mt-4 mb-5">
+                <img src="images/loop2.gif" style="height: 60px;">
+                Creative and
+                Innovative
+            </div>
+            <div class="col-sm-3 mt-4 mb-5">
+                <img src="images/loop3.gif" style="height: 60px;">
+                Naturally
+                Pure
+            </div>
+            <div class="col-sm-3 mt-4 mb-5">
+                <img src="images/loop4.gif" style="height: 60px;">
+                Made with
+                Care
+            </div>
+        </div>
+
+    </div>
+    <!--main end-->
+
+    <!--card start-->
+    <div class="row mt-5">
+        <h2 style=" font-family: Satisfy, cursive; color: #F00540; font-size: 50px; margin-left: 30px;"><b>The cool,</b>
+        </h2>
+        <div class="mx-4 font" style="font-family: Kanit, sans-serif; font-size:70px ; margin-bottom: 30px;"> <b>new
+                kids on the block</b>
+
+
+        </div>
+        <div class="col-sm-3 ">
+            <div class="mycard  position-relative">
+                <div class="pt-4 ps-2">
+                    <button class="btn border-1 border-black rounded-pill py-1 ">
+                        New
+                    </button>
+                </div>
+                <div>
+                    <img src="images/c1.png" alt="" class="img-fluid">
+                </div>
+                <div class="position-absolute fixed-bottom mb-4 ms-3">
+                    <h4>Choco Fudge</h4>
+                    <h5>Badabite Ice Cream Candy</h5>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 ">
+            <div class="mycard  position-relative">
+                <div class="pt-4 ps-2">
+                    <button class="btn border-1 border-black rounded-pill py-1 ">
+                        New
+                    </button>
+                </div>
+                <div>
+                    <img src="images/c2.png" alt="" class="img-fluid">
+                </div>
+                <div class="position-absolute  fixed-bottom mb-4 ms-3">
+                    <h4>Choco Fudge</h4>
+                    <h5>Badabite Ice Cream Candy</h5>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-sm-3 ">
+            <div class="mycard  position-relative">
+                <div class="pt-4 ps-2">
+                    <button class="btn border-1 border-black rounded-pill py-1 ">
+                        New
+                    </button>
+                </div>
+                <div>
+                    <img src="images/c3.png" alt="" class="img-fluid">
+                </div>
+                <div class="position-absolute  fixed-bottom mb-4 ms-3">
+                    <h4>Choco Fudge</h4>
+                    <h5>Badabite Ice Cream Candy</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="mycard  position-relative">
+                <div class="pt-4 ps-2">
+                    <button class="btn border-1 border-black rounded-pill py-1 ">New</button>
+                </div>
+                <div>
+                    <img src="images/c4.png" alt="" class="img-fluid">
+                </div>
+                <div class="position-absolute  fixed-bottom mb-4 ms-3 ">
+                    <h4>Choco Fudge</h4>
+                    <h5>Badabite Ice Cream Candy</h5>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!--card end-->
+
+    <!--unlock start-->
+    <div class="row p-0">
+        <div class="col-sm-12 unlock mt-4">
+            <h3
+                style="text-align: center; color: white; margin-top: 480px; font-family: Paytone One, sans-serif; font-size: 40 px;">
+                Unlock a World
+                <br /> Full Of indulegence
+            </h3>
+        </div>
+    </div>
+    <!--unlock end-->
+    <!--marquee start-->
+    <div class="row mt-">
+        
+            <button class=" impulse  btn border-1  rounded-pill py-2 mx-5">
+                Impulse 
+            </button> 
+            
+    
+    </div>
+    <div>
+        <marquee behavior="" direction="right" style="margin-bottom: 80px;"> 
+            <span></span>
+        </marquee>
+            <div class="row">
+                <button class=" impulse  btn border-1  rounded-pill py-2 mx-5">
+                    Take a home
+                </button> 
+
+            </div>
+        
+    </div>
+      
+    <!--marquee end-->
+    <div class="row mt-4">
+        <div class="col-sm-12">
+            <img src="images/home_cafe.abea6370.jpg" alt="">
+        </div>
+    </div>
+    <div class="row"></div>
+        <div class="col-sm-12">
+            <img src="images/homeScoopShop.b910d789.jpg" alt="">
+        </div>
+    </div>
+
+    <!--reach out start-->
+    <div class="row">
+        <div class="col-sm-12 text-center mt-5">
+            <h3 style="font-family: Great Vibes, cursive; font-size: 70px; color: #F00540; margin-top: 20px;"><b>We hear
+                    you scream</b></h3>
+            <h3 style="font-family: Paytone One, sans-serif;" class="font">for ice-cream</h3>
+        </div>
+    </div>
+    <div class="row mt-5 mx-auto">
+        <div class="col-sm-4 " style="margin-left: 70px;">
+            <div class="card" style="width: 33rem; border-radius: 30px; border: 1px solid #6B3D2B;">
+                <img src="images/reach.jpg" class="card-img-top image" alt="..." ;>
+                <div class="card-body">
+                    <h4 class="card-text" style="color: #6B3D2B; margin-left: 12px;"><b>Corporate Office </b></h4>
+                    <br />
+                    <b>
+                        <p style="color: #6B3D2B; font-size: 18px; justify-content: center; margin-left: 12px;">Vadilal
+                            House <br />
+                    </b>
+                    Vadilal Enterprises Ltd., Nr. Navrangpura Rly Crossing, Navrangpura, Ahmedabad - 9, Gujarat, INDIA
+                    <br /><br />
+
+                    Tel: +91 79 26564018 to 24
+                    <br /><br />
+
+                    Fax : +91 79 26564027
+                    <br /><br />
+
+                    E-mail: info@vadilalgroup.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7  image2" style="">
+            <div class="card" style="background-color: #FFF5B0; border-radius: 25px; border: none;">
+
+                <div class="card-body" style="padding-bottom: 156px;">
+                    <form class="row h-100 align-items-center ">
+                        <div class="p-3">
+
+                            <h3 style="color:#6B3D2B;"><b>Reach Out To Us</b></h3>
+                            <div class="row">
+                                <div class="col-sm-6 ">
+                                    <label for="" class="form-label"></label>
+                                    <input type="text" class="form-control py-2" id="name" placeholder=" Name" />
+
+
+
+
+
+                                </div>
+
+                                <div class="col-sm-6 ">
+                                    <label for="company" class="form-label"></label>
+                                    <input type="text" class="form-control py-2" id="company" placeholder="Company" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="" class="form-label"></label>
+                                    <input type="text" class="form-control py-2" id="name" placeholder=" Phone" />
+
+
+
+
+
+                                </div>
+
+                                <div class="col-sm-6 ">
+                                    <label for="company" class="form-label"></label>
+                                    <input type="email" class="form-control py-2" id="company" placeholder="Email Id" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="" class="form-label"></label>
+                                    <input type="text" class="form-control py-2" id="name" placeholder=" Occupation" />
+
+
+
+
+
+                                </div>
+
+                                <div class="col-sm-6 ">
+                                    <label for="" class="form-label"></label>
+                                    <input type="text" class="form-control py-2" id="company"
+                                        placeholder="Interested in" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn border-1   py-1 submit "
+                                style=" background-color: #6B3D2B;">Send</button>
+
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--reach out end-->
+    <!--top fotter start-->
+    <div class="row  py-5" style="background-color: #FFFBDF; margin-top: 80px;">
+
+        <div class="col-sm-3 mt-2">
+            <img src="images/logo1.svg" alt="Vadilal" height="70" style="margin-left: 100px; width: 200px;">
+
+        </div>
+        <div class="col-sm-2 mt-2 ">
+            <a href="" style="text-decoration: none; font-size: 18px; color: #6B3D2B;">Brand Story</a>
+            <br /><br>
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Products</a>
+            <br /><br>
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Chronicles</a>
+        </div>
+        <div class="col-sm-2 mt-2">
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Now For Ever Cafe</a>
+            <br /><br>
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Scoopshop</a>
+            <br /><br>
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Locate Us</a>
+        </div>
+        <div class="col-sm-2 mt-2">
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Contact Us</a>
+            <br /><br>
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Careers</a>
+            <br /><br>
+            <a href="" style="text-decoration: none; font-size: 18px;color: #6B3D2B;">Franchise</a>
+
+        </div>
+        <div class="col-sm-3">
+            <span style="font-size: 18px;"> Follow Us On</span>&ensp;
+            <span><img width="40" height="40" src="https://img.icons8.com/ios-filled/100/facebook-new.png"
+                    alt="facebook-new" /></span>
+            <span><img width="40" height="40" src="https://img.icons8.com/material-outlined/100/instagram-new--v1.png"
+                    alt="instagram-new--v1" /></span>
+            <span><img width="40" height="40" src="https://img.icons8.com/material-outlined/30/youtube-play--v1.png"
+                    alt="youtube-play--v1" /></span>
+        </div>
+
+    </div>
+    <!--top fotter end-->
+
+
+    <!--fotter start bottom-->
+    <div class="row   p-0  py-3" style=" background-color: #6B3D2B;">
+        <div class="col-sm-3 mx-5 text-light  mx-auto"><b style="margin-left: 40px;">Copyright 2024 Vadilal Group</b>
+        </div>
+        <div class="col-sm-3 mx-5  text-light "><a href="#" style="text-decoration: none;color: white;"><b
+                    style="margin-left: 40px;">Privacy Policy</a></b></div>
+        <div class="col-sm-3 mx-5">
+            <a href="https://www.ting.in/" target="blank">
+                <picture>
+                    <img src="/_next/static/media/made_by_ting.687c6619.svg" alt="TingLogo">
+                </picture>
+            </a>
+        </div>
+    </div>
+    <!--fotter end bottom-->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
